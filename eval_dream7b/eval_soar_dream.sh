@@ -4,9 +4,9 @@ model=your_local_model_path
 cp generation_utils.py $model
 export HF_ALLOW_CODE_EVAL=1
 
-lengths=(256,512)  # 定义多个长度值
+lengths=(256 512)
 
-port=29510  # 起始端口号
+port=29510
 
 for l in "${lengths[@]}"
 do
@@ -41,11 +41,8 @@ do
         --log_samples \
         --confirm_run_unsafe_code &> "logs/gsm8k-len${l}_ns4_soar.log"
     
-    echo "完成长度 ${l} 的所有任务评估"
-    echo "----------------------------------------"
 done
 
-echo "所有长度评估任务已完成！"
 
 ## NOTICE: use postprocess for humaneval
 # python postprocess_code.py {the samples_xxx.jsonl file under output_path}
