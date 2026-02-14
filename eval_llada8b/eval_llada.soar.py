@@ -34,7 +34,7 @@ from tqdm import tqdm
 import os
 from transformers import AutoTokenizer, AutoModel, AutoConfig
 from generate import generate_soar
-# from model.modeling_llada import LLaDAModelLM
+
 import json
 import time
 def set_seed(seed):

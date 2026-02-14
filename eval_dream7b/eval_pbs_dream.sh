@@ -1,10 +1,11 @@
 #!/bin/bash
 
-model=your_local_model_path
+model=$your_local_model_path
 cp generation_utils.py $model
 export HF_ALLOW_CODE_EVAL=1
 
 lengths=(256 512)
+mkdir logs
 
 port=29510
 

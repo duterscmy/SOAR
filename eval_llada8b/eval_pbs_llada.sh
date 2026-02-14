@@ -6,6 +6,8 @@ export HF_ALLOW_CODE_EVAL=1
 export HF_DATASETS_TRUST_REMOTE_CODE=true
 script=eval_llada.pbs.py
 
+mkdir logs
+
 for length in "${lengths[@]}"; do
     python $script --tasks humaneval --model llada_dist \
         --confirm_run_unsafe_code \
