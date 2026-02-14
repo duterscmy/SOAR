@@ -6,9 +6,11 @@
 
 ## 📖 Overview
 
-![SOAR Method](figures/method.png)
+<div align="center">
+  <img src="figures/method.png" alt="Illustration of SOAR" width="1000">
+</div>
 
-SOAR (Search or Accelerate) is a confidence-switched position beam search decoding strategy for diffusion language models. The core idea is simple yet effective:
+SOAR is a confidence-switched position beam search decoding strategy for diffusion language models. The core idea is:
 
 When there are high-confidence tokens in the sequence, SOAR selects parallel decoding for these tokens; otherwise, it employs position beam search to expand the search space.
 
@@ -16,7 +18,9 @@ When there are high-confidence tokens in the sequence, SOAR selects parallel dec
 
 ## 🎯 Main Results
 
-![Decoding Strategy Impact](figures/decoding_strategy_impact.png)
+<p align="center">
+  <img src="figures/decoding_strategy_impact.png" alt="Main Results" width="400">
+</p>
 
 SOAR achieves improved decoding quality without sacrificing decoding speed
 
