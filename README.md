@@ -6,8 +6,8 @@
   <img src="figures/uos.png" alt="University of Surrey" height="35px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
   <img src="figures/Qualcomm-Logo.png" alt="Qualcomm AI Research" height="35px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
   <img src="figures/ellis-insittute-logo-horiz.png" alt="ELLIS Institute Tübingen" height="35px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
-  <img src="figures/Max-Planck-Gesellschaft_logo.png" alt="Max Planck Institute for Intelligent Systems" height="80px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
-  <img src="figures/logo-tueai.png" alt="Tübingen AI Center" height="40px" style="margin: 30px;"/>
+  <img src="figures/Max-Planck-Gesellschaft_logo.png" alt="Max Planck Institute for Intelligent Systems" height="100px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
+  <img src="figures/logo-tueai.png" alt="Tübingen AI Center" height="50px" style="margin: 30px;"/>
 </p>
 
 **[Mingyu Cao](https://scholar.google.com/citations?user=nq7uHwQAAAAJ&hl=en)** · 
