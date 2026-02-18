@@ -3,17 +3,18 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2602.10953-b31b1b.svg)](https://arxiv.org/abs/2602.10953)
 
 <p align="center">
-  <img src="figures/uos.png" alt="University of Surrey" height="30px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
-  <img src="figures/Qualcomm-Logo.png" alt="Qualcomm AI Research" height="30px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
-  <img src="figures/ellis-insittute-logo-horiz.png" alt="ELLIS Institute Tübingen" height="30px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
-  <img src="figures/Max-Planck-Gesellschaft_logo.png" alt="Max Planck Institute for Intelligent Systems" height="80px" style="margin: 30px;"/>
+  <img src="figures/uos.png" alt="University of Surrey" height="35px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
+  <img src="figures/Qualcomm-Logo.png" alt="Qualcomm AI Research" height="35px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
+  <img src="figures/ellis-insittute-logo-horiz.png" alt="ELLIS Institute Tübingen" height="35px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
+  <img src="figures/Max-Planck-Gesellschaft_logo.png" alt="Max Planck Institute for Intelligent Systems" height="80px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
+  <img src="figures/logo-tueai.png" alt="Tübingen AI Center" height="40px" style="margin: 30px;"/>
 </p>
 
-**Mingyu Cao** [![Google Scholar](https://img.shields.io/badge/Scholar-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=nq7uHwQAAAAJ&hl=en) · 
-**Alvaro H.C. Correia** [![Google Scholar](https://img.shields.io/badge/Scholar-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?hl=en&user=E9h9QKEAAAAJ) · 
-**Christos Louizos** [![Google Scholar](https://img.shields.io/badge/Scholar-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?hl=en&user=xrSUChoAAAAJ&view_op=list_works&sortby=pubdate) · 
-**Shiwei Liu** [![Homepage](https://img.shields.io/badge/Web-4285F4?logo=googlechrome&logoColor=white)](https://shiweiliuiiiiiii.github.io/) · 
-**Lu Yin** [![Homepage](https://img.shields.io/badge/Web-4285F4?logo=googlechrome&logoColor=white)](https://luuyin.com/)
+**[Mingyu Cao](https://scholar.google.com/citations?user=nq7uHwQAAAAJ&hl=en)** · 
+**[Alvaro H.C. Correia](https://scholar.google.com/citations?hl=en&user=E9h9QKEAAAAJ)** · 
+**[Christos Louizos](https://scholar.google.com/citations?hl=en&user=xrSUChoAAAAJ&view_op=list_works&sortby=pubdate)** · 
+**[Shiwei Liu](https://shiweiliuiiiiiii.github.io/)** · 
+**[Lu Yin](https://luuyin.com/)**
 
 University of Surrey · Qualcomm AI Research · ELLIS Institute Tübingen · Max Planck Institute for Intelligent Systems · Tübingen AI Center
 
