@@ -110,6 +110,8 @@ class DreamModelOutput(ModelOutput):
 
 class DreamGenerationConfig(GenerationConfig):
     def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        
         self.temperature: float = kwargs.pop("temperature", 0.0)
         self.top_p: Optional[float] = kwargs.pop("top_p", None)
         self.top_k: Optional[int] = kwargs.pop("top_k", None)

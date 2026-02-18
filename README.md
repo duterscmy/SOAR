@@ -31,7 +31,7 @@ SOAR achieves improved decoding quality without sacrificing decoding speed
 ```bash
 git clone https://github.com/duterscmy/SOAR.git
 cd SOAR
-pip install transformers accelerate
+pip install transformers==4.46.2 torch==2.5.1 accelerate
 ```
 
 ## 📊 Evaluation
