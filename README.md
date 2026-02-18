@@ -2,7 +2,23 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.10953-b31b1b.svg)](https://arxiv.org/abs/2602.10953)
 
----
+<p align="center">
+  <img src="figures/uos.png" alt="University of Surrey" height="40px" style="margin: 10px;"/>
+  <img src="figures/Qualcomm-Logo.png" alt="Qualcomm AI Research" height="40px" style="margin: 10px;"/>
+  <img src="figures/ellis-insittute-logo-horiz.png" alt="ELLIS Institute Tübingen" height="40px" style="margin: 10px;"/>
+  <img src="figures/Max-Planck-Gesellschaft_logo.png" alt="Max Planck Institute for Intelligent Systems" height="40px" style="margin: 10px;"/>
+</p>
+
+**Mingyu Cao** [![Google Scholar](https://img.shields.io/badge/Scholar-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=nq7uHwQAAAAJ&hl=en) · 
+**Alvaro H.C. Correia** [![Google Scholar](https://img.shields.io/badge/Scholar-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?hl=en&user=E9h9QKEAAAAJ) · 
+**Christos Louizos** [![Google Scholar](https://img.shields.io/badge/Scholar-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?hl=en&user=xrSUChoAAAAJ&view_op=list_works&sortby=pubdate) · 
+**Shiwei Liu** [![Homepage](https://img.shields.io/badge/Web-4285F4?logo=googlechrome&logoColor=white)](https://shiweiliuiiiiiii.github.io/) · 
+**Lu Yin** [![Homepage](https://img.shields.io/badge/Web-4285F4?logo=googlechrome&logoColor=white)](https://luuyin.com/)
+
+University of Surrey · Qualcomm AI Research · ELLIS Institute Tübingen · Max Planck Institute for Intelligent Systems · Tübingen AI Center
+
+📧 **Contact**: The code can be contacted at [m.cao@surrey.ac.uk](mailto:m.cao@surrey.ac.uk)
+
 
 ## 📖 Overview
 
@@ -22,7 +38,7 @@ When there are high-confidence tokens in the sequence, SOAR selects parallel dec
   <img src="figures/decoding_strategy_impact.png" alt="Main Results" width="400">
 </p>
 
-SOAR achieves improved decoding quality without sacrificing decoding speed
+SOAR achieves improved decoding quality without sacrificing decoding speed, averaging results across GSM8K, MBPP, and HumanEval.
 
 ---
 
@@ -31,7 +47,7 @@ SOAR achieves improved decoding quality without sacrificing decoding speed
 ```bash
 git clone https://github.com/duterscmy/SOAR.git
 cd SOAR
-pip install transformers==4.46.2 torch==2.5.1 accelerate
+pip install transformers==4.46.2 torch==2.5.1 accelerate==1.12.0
 ```
 
 ## 📊 Evaluation
