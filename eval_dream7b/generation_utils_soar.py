@@ -110,7 +110,7 @@ class DreamModelOutput(ModelOutput):
 
 class DreamGenerationConfig(GenerationConfig):
     def __init__(self, **kwargs):
-        print(kwargs)
+
         self.temperature: float = kwargs.pop("temperature", 0.0)
         self.top_p: Optional[float] = kwargs.pop("top_p", None)
         self.top_k: Optional[int] = kwargs.pop("top_k", None)
@@ -128,7 +128,7 @@ class DreamGenerationConfig(GenerationConfig):
         self.output_history: bool = kwargs.pop("output_history", False)
 
         # soar params
-        self.decode_method: str = kwargs.get("decode_method", "origin")
+        self.decode_method: str = "soar"
         self.beam_size: int = kwargs.get("beam_size", 2)
         self.threshhold: float = kwargs.get("threshhold", 0.9)
         self.min_parallel_tokens: int = kwargs.get("min_parallel_tokens", 1)

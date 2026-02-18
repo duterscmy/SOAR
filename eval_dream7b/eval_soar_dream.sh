@@ -1,7 +1,7 @@
 #!/bin/bash
 
 model=$your_local_model_path
-cp generation_utils.py $model
+cp generation_utils_soar.py $model/generation_utils.py
 export HF_ALLOW_CODE_EVAL=1
 
 lengths=(256 512)
@@ -16,7 +16,7 @@ do
     diffusion_steps=$((l))
 
     accelerate launch --main_process_port ${current_port} eval.py --model dream \
-        --model_args "pretrained=${model},max_new_tokens=${l},diffusion_steps=${diffusion_steps},temperature=0.0,top_p=0.95,add_bos_token=true,escape_until=true,decode_method=soar" \
+        --model_args "pretrained=${model},max_new_tokens=${l},diffusion_steps=${diffusion_steps},temperature=0.0,top_p=0.95,add_bos_token=true,escape_until=true" \
         --tasks humaneval \
         --num_fewshot 0 \
         --batch_size 1 \
