@@ -374,7 +374,8 @@ class DreamGenerationMixin:
             attention_mask=attention_mask 
         )
 
-        decode_method = generation_config["decode_method"]
+        print(generation_config.decode_method)
+        decode_method = generation_config.decode_method
         if decode_method == "origin":
             result = self._sample(
                 input_ids,
