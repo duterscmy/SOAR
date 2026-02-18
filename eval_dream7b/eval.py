@@ -17,7 +17,7 @@ from lm_eval import utils
 from lm_eval.api.instance import Instance
 from lm_eval.api.model import LM
 from lm_eval.api.registry import register_model
-from lm_eval.models.utils import get_dtype
+# from lm_eval.models.utils import get_dtype
 from lm_eval.__main__ import cli_evaluate
 
 eval_logger = logging.getLogger(__name__)
