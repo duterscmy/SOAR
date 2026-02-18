@@ -4,6 +4,7 @@ model=$your_local_model_path
 cp generation_utils_soar.py $model/generation_utils.py
 export HF_ALLOW_CODE_EVAL=1
 
+
 lengths=(256 512)
 mkdir logs
 
