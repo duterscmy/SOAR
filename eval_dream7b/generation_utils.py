@@ -110,8 +110,7 @@ class DreamModelOutput(ModelOutput):
 
 class DreamGenerationConfig(GenerationConfig):
     def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        
+        print(kwargs)
         self.temperature: float = kwargs.pop("temperature", 0.0)
         self.top_p: Optional[float] = kwargs.pop("top_p", None)
         self.top_k: Optional[int] = kwargs.pop("top_k", None)
@@ -134,7 +133,6 @@ class DreamGenerationConfig(GenerationConfig):
         self.threshhold: float = kwargs.get("threshhold", 0.9)
         self.min_parallel_tokens: int = kwargs.get("min_parallel_tokens", 1)
         self.max_parallel_tokens: int = kwargs.get("max_parallel_tokens", 5)
-        print(self.decode_method, self.beam_size, self.threshhold)
 
         # Special tokens that can be used at generation time
         self.mask_token_id = kwargs.pop("mask_token_id", None)
