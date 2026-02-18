@@ -199,7 +199,7 @@ class Dream(LM):
             transformers.AutoModel.from_pretrained(
                 pretrained,
                 # torch_dtype=get_dtype(dtype),
-                torch_dtype=torch.bfloat16,
+                torch_dtype=torch.float16,
                 trust_remote_code=trust_remote_code,
             )
             .eval()
