@@ -3,10 +3,10 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2602.10953-b31b1b.svg)](https://arxiv.org/abs/2602.10953)
 
 <p align="center">
-  <img src="figures/uos.png" alt="University of Surrey" height="40px" style="margin: 10px;"/>
-  <img src="figures/Qualcomm-Logo.png" alt="Qualcomm AI Research" height="40px" style="margin: 10px;"/>
-  <img src="figures/ellis-insittute-logo-horiz.png" alt="ELLIS Institute Tübingen" height="40px" style="margin: 10px;"/>
-  <img src="figures/Max-Planck-Gesellschaft_logo.png" alt="Max Planck Institute for Intelligent Systems" height="40px" style="margin: 10px;"/>
+  <img src="figures/uos.png" alt="University of Surrey" height="30px" style="margin: 20px;"/>
+  <img src="figures/Qualcomm-Logo.png" alt="Qualcomm AI Research" height="30px" style="margin: 20px;"/>
+  <img src="figures/ellis-insittute-logo-horiz.png" alt="ELLIS Institute Tübingen" height="30px" style="margin: 20px;"/>
+  <img src="figures/Max-Planck-Gesellschaft_logo.png" alt="Max Planck Institute for Intelligent Systems" height="70px" style="margin: 20px;"/>
 </p>
 
 **Mingyu Cao** [![Google Scholar](https://img.shields.io/badge/Scholar-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=nq7uHwQAAAAJ&hl=en) · 
