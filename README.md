@@ -24,7 +24,7 @@ University of Surrey · Qualcomm AI Research · ELLIS Institute Tübingen · Max
 ## 📖 Overview
 
 <div align="center">
-  <img src="figures/method.png" alt="Illustration of SOAR" width="1000">
+  <img src="figures/method.gif" alt="Illustration of SOAR" width="1000">
 </div>
 
 SOAR is a confidence-switched position beam search decoding strategy for diffusion language models. The core idea is:
