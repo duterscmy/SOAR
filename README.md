@@ -1,6 +1,7 @@
 # SOAR: Confidence-Switched Position Beam Search for Diffusion Language Models
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.10953-b31b1b.svg)](https://arxiv.org/abs/2602.10953)
+[![Project Page](https://img.shields.io/badge/Project-Introduction-blue)](https://duterscmy.github.io/soar-introduction/)
 
 <p align="center">
   <img src="figures/uos.png" alt="University of Surrey" height="35px" style="margin: 30px;"/>&nbsp;&nbsp;&nbsp;
