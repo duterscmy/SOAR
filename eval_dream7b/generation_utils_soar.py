@@ -571,7 +571,7 @@ class DreamGenerationMixin:
                 current_mask_count = (best_seq == mask_token_id).sum().item()
                 masks_unmasked = original_mask_count - current_mask_count
                 
-                if masks_unmasked >= min_high_confidence_len:
+                if masks_unmasked >= 2:
                     beam_size = 1
                     beam = [best_candidate]
                 else:
