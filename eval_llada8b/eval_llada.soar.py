@@ -67,6 +67,8 @@ class LLaDAEvalHarness(LM):
         save_dir=None,
         show_speed=False,
         dual_cache=False,
+        enable_pbs=False,
+        enable_soar=False,
         **kwargs,
     ):
         '''
@@ -132,6 +134,8 @@ class LLaDAEvalHarness(LM):
         self.save_dir = save_dir
         self.show_speed = show_speed
         self.dual_cache = dual_cache
+        self.enable_pbs = enable_pbs
+        self.enable_soar = enable_soar
     @property
     def rank(self):
         return self._rank
@@ -336,8 +340,18 @@ class LLaDAEvalHarness(LM):
 
             stop_tokens = req.args[1]['until']
             input_ids = batched_input_ids
-            generated_answer = generate_soar(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
+            if self.enable_pbs:
+                from generate import generate_pbs
+                generated_answer, nfe = generate_pbs(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
                                     temperature=0, remasking=self.remasking, mask_id=self.mask_id)
+            elif self.enable_soar:
+                from generate import generate_soar
+                generated_answer = generate_soar(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
+                                    temperature=0, remasking=self.remasking, mask_id=self.mask_id)
+            else:
+                from generate import generate
+                generated_answer, nfe = generate(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
+                                    temperature=0, remasking=self.remasking, mask_id=self.mask_id, attention_mask=attention_mask)
 
             if self.is_instruct and 'task_id' in req.doc and str(req.doc['task_id']).lower().startswith('humaneval'):
                 generated_answer_ids = generated_answer[:, input_ids.shape[1]:]
