@@ -62,6 +62,12 @@ cd eval_llada8b
 bash eval_soar_llada.sh
 ```
 
+### For LLaDA-8B-Instruct
+```bash
+cd eval_llada8b
+bash eval_soar_llada.instruct.sh
+```
+
 ### For Dream-7B-Base:
 ```bash
 cd eval_dream7b
