@@ -342,7 +342,7 @@ class LLaDAEvalHarness(LM):
             input_ids = batched_input_ids
             if self.enable_pbs:
                 from generate import generate_pbs
-                generated_answer, nfe = generate_pbs(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
+                generated_answer = generate_pbs(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
                                     temperature=0, remasking=self.remasking, mask_id=self.mask_id)
             elif self.enable_soar:
                 from generate import generate_soar
@@ -350,14 +350,13 @@ class LLaDAEvalHarness(LM):
                                     temperature=0, remasking=self.remasking, mask_id=self.mask_id)
             else:
                 from generate import generate
-                generated_answer, nfe = generate(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
+                generated_answer = generate(self.model, input_ids, steps=self.steps, gen_length=self.gen_length, block_length=self.block_length, 
                                     temperature=0, remasking=self.remasking, mask_id=self.mask_id, attention_mask=attention_mask)
 
             if self.is_instruct and 'task_id' in req.doc and str(req.doc['task_id']).lower().startswith('humaneval'):
                 generated_answer_ids = generated_answer[:, input_ids.shape[1]:]
                 if self.show_speed:
                     num_tokens += (generated_answer_ids != 126081).sum()
-                    num_nfe += nfe
                 batched_generated_answer = [self.tokenizer.decode(generated_answer_ids[i], skip_special_tokens=True) for i in range(len(generated_answer_ids))]
             else:
                 batched_generated_answer = []
